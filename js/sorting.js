@@ -13,6 +13,8 @@ window.addEventListener('resize',addBars);
 
 let barsNoEL = document.getElementById('bars_no');
 if(screenWidth<=576){
+    document.getElementById('numbers').innerHTML = "<input id='bars_no' class='input' type='range' min=10 max=30 step=1 value=15>";
+    barsNoEL = document.getElementById('bars_no');
     barsNoEL.value = 10;
 }
 let barsSpeedEl = document.getElementById(`bars_speed`);
